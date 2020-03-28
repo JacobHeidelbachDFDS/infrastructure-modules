@@ -53,6 +53,8 @@ resource "aws_db_instance" "postgres" {
   username            = "${var.db_master_username}"
   password            = "${var.db_master_password}"
   skip_final_snapshot = "${var.skip_final_snapshot}"
+  performance_insights_enabled  = "${var.performance_insights_enabled}"
+  performance_insights_retention_period = "${var.performance_insights_retention_period}"
 
   timeouts {
     create = "2h"

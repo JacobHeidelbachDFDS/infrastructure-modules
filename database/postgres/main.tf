@@ -28,6 +28,10 @@ module "postgres" {
   db_master_username = "${var.db_master_username}"
   db_master_password = "${var.db_master_password}"
   skip_final_snapshot = "${var.skip_final_snapshot}"
+  db_instance_class = "${var.db_instance_class}"
+  performance_insights_enabled = "${var.performance_insights_enabled}"
+  performance_insights_retention_period = "${var.performance_insights_retention_period}"
+
 }
 
 module "param_store_pghost" {
