@@ -10,3 +10,6 @@ The connection strings, passwords etc can be found in parameter store in the sam
 * db_master_username = "test" (Destrutive if changed)
 * db_master_password = "testtesttest" (Can be used for changing password)
 * skip_final_snapshot = false (Optional and should NOT be set to true for production)
+
+* performance_insights_enabled = false (Optional - Specifies whether Performance Insights are enabled
+* performance_insights_retention_period = 7 (Optional - The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying performance_insights_retention_period, performance_insights_enabled needs to be set to true.)
