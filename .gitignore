@@ -1,6 +1,5 @@
 #  Local .terraform directories
 **/.terraform/*
-**/.terragrunt-cache/*
 
 # .tfstate files
 *.tfstate
@@ -33,5 +32,6 @@ validate.json
 /vendor/
 /Godeps/
 
+*.icloud
 
 # End of https://www.gitignore.io/api/go
