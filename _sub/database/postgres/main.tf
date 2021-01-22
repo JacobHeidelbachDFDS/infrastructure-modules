@@ -33,7 +33,7 @@ resource "aws_db_parameter_group" "dbparams" {
 #Restore the postgres database with the pre-configured settings
 resource "aws_db_instance" "postgres" {
   engine                  = "postgres"
-  engine_version          = "10.13"
+  engine_version          = "12.3"
   publicly_accessible     = "true"
   backup_retention_period = 10
   apply_immediately       = true
